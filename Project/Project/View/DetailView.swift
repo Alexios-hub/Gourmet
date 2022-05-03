@@ -8,13 +8,16 @@
 import SwiftUI
 
 struct DetailView: View {
+    
     @EnvironmentObject var baseData:BaseViewModel
     var animation : Namespace.ID
-    @State var size = "Step1"
+    @State var step = "Step 1"
     @State var shoeColor: Color = .red
+    @State var showmoredescription : Bool = false
     var body: some View {
         if let recipe = baseData.currentRecipe,baseData.showDetail{
-            VStack(spacing:0){
+            ScrollView{
+            VStack(spacing:0 ){
                 
                 HStack{
                     Button{
@@ -43,11 +46,11 @@ struct DetailView: View {
                     
                 Image(recipe.image)
                         .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .matchedGeometryEffect(id: recipe.image, in: animation)
+                       
                         .frame(width: 250, height: 250)
                         .cornerRadius(12)
                         .frame(height:getScreenBounds().height/3)
+                        .matchedGeometryEffect(id: recipe.image, in: animation)
                 VStack(alignment: .leading, spacing: 18){
                     HStack{
                         Text(recipe.name)
@@ -58,9 +61,34 @@ struct DetailView: View {
                         Text("(\(recipe.rating))")
                             .foregroundColor(.gray)
                     }
+                    if(showmoredescription==false){
                     Text(recipe.description)
                         .font(.callout)
                         .lineSpacing(10)
+                        .lineLimit(3)
+                        Button{
+                            showmoredescription = true
+                        }label: {
+                            Text("更多")
+                                .font(.callout)
+                                .foregroundColor(.blue)
+                        }
+                    }else{
+                        Text(recipe.description)
+                            .fixedSize(horizontal: false, vertical: true)
+                            .font(.callout)
+                            .lineSpacing(10)
+                        Button{
+                            showmoredescription = false
+                        }label: {
+                            Text("收起")
+                              
+                                .font(.callout)
+                                .foregroundColor(.blue)
+                            
+                        }
+                    }
+                  
                     
                     
                     
@@ -71,12 +99,12 @@ struct DetailView: View {
                             .padding(.trailing)
                         ScrollView(.horizontal,showsIndicators :false){
                             HStack{
-                        ForEach(["Step1","Step2","Step3"],id:\.self){
-                            size in
+                                ForEach(baseData.currentRecipe!.todo){
+                            item in
                             Button{
-                                self.size = size
+                                self.step = "Step " + String(item.step)
                             }label: {
-                                Text(size)
+                                Text("Step " + String(item.step))
                                     .font(.callout)
                                     .foregroundColor(.black)
                                     .padding(.vertical,8)
@@ -84,12 +112,14 @@ struct DetailView: View {
                                     .background(
                                     RoundedRectangle(cornerRadius: 8)
                                         .fill(Color.blue)
-                                        .opacity(self.size == size ? 0.3 : 0)
+                                        .opacity(self.step == ("Step " + String(item.step)) ? 0.3 : 0)
                                     )
                             }
+                                   
                         }
                             }
                     }
+                      
                     }
                     .padding(.vertical)
                     
@@ -120,6 +150,15 @@ struct DetailView: View {
 //                        }
 //                    }
 //                    .padding(.vertical)
+                    ForEach(baseData.currentRecipe!.todo){
+                        item in
+                        if(self.step == "Step " + String(item.step)){
+                            Text(item.description)
+                                .fixedSize(horizontal: false, vertical: true)
+                                .font(.callout)
+                                .lineSpacing(10)
+                        }
+                    }
                     Button{
                         
                     }label: {
@@ -157,13 +196,14 @@ struct DetailView: View {
             .transition(.opacity)
             
         }
+        }
         
     }
 }
 
 struct DetailView_Previews:PreviewProvider{
     static var previews: some View{
-        ContentView()
+        BaseView()
     }
 }
 

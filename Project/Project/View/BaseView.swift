@@ -26,11 +26,16 @@ struct BaseView: View {
                 .background(Color.black.opacity(0.04))
                 .tag(Tab.Community)
             PersonalView(user: loginuser, recipes: favoriterecipes)
+                .environmentObject(baseData)
+                .frame(maxWidth:.infinity,maxHeight: .infinity)
+                .background(Color.black.opacity(0.04))
                 .tag(Tab.Person)
             
             
             
+            
         }
+        
         .overlay(
             
                 HStack(spacing:0){
@@ -76,8 +81,10 @@ struct BaseView: View {
                
             
         )
+      
        
     }
+    
     
     @ViewBuilder
     func TabButton(Tab:Tab)->some View{

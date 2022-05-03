@@ -21,6 +21,8 @@
 		A474A28A281E9FA80091A553 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A285281E9FA80091A553 /* BaseView.swift */; };
 		A474A28E281E9FB60091A553 /* RecipeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A28C281E9FB60091A553 /* RecipeViewModel.swift */; };
 		A474A28F281E9FB60091A553 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A28D281E9FB60091A553 /* BaseViewModel.swift */; };
+		A474A291282001C20091A553 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A290282001C20091A553 /* Login.swift */; };
+		A474A29328200DD40091A553 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A29228200DD30091A553 /* UserInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		A474A285281E9FA80091A553 /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		A474A28C281E9FB60091A553 /* RecipeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeViewModel.swift; sourceTree = "<group>"; };
 		A474A28D281E9FB60091A553 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A474A290282001C20091A553 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		A474A29228200DD30091A553 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 		A474A280281E9FA80091A553 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A474A290282001C20091A553 /* Login.swift */,
 				A474A281281E9FA80091A553 /* DetailView.swift */,
 				A474A282281E9FA80091A553 /* PersonalView.swift */,
 				A474A283281E9FA80091A553 /* Community.swift */,
@@ -117,6 +122,7 @@
 			children = (
 				A474A28C281E9FB60091A553 /* RecipeViewModel.swift */,
 				A474A28D281E9FB60091A553 /* BaseViewModel.swift */,
+				A474A29228200DD30091A553 /* UserInfo.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -193,6 +199,7 @@
 			files = (
 				A474A273281E9F890091A553 /* User.swift in Sources */,
 				A474A286281E9FA80091A553 /* DetailView.swift in Sources */,
+				A474A291282001C20091A553 /* Login.swift in Sources */,
 				A474A272281E9F890091A553 /* Recipe.swift in Sources */,
 				A474A274281E9F890091A553 /* Product.swift in Sources */,
 				A474A289281E9FA80091A553 /* CustomCurveShape.swift in Sources */,
@@ -202,6 +209,7 @@
 				A474A28E281E9FB60091A553 /* RecipeViewModel.swift in Sources */,
 				A474A28A281E9FA80091A553 /* BaseView.swift in Sources */,
 				A474A25B281E9DEC0091A553 /* ProjectApp.swift in Sources */,
+				A474A29328200DD40091A553 /* UserInfo.swift in Sources */,
 				A474A288281E9FA80091A553 /* Community.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

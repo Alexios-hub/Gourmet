@@ -12,6 +12,7 @@ struct Community: View {
     
     @Namespace var animation
     @EnvironmentObject var baseData:BaseViewModel
+
     
     
     
@@ -81,6 +82,7 @@ struct Community: View {
                                 withAnimation{
                                     baseData.currentRecipe = recipe
                                     baseData.showDetail = true
+                                 
                                     
                                 }
                             }
@@ -90,7 +92,8 @@ struct Community: View {
             }
             .padding()
         }
-        .overlay(DetailView(animation: animation).environmentObject(baseData))
+        .fullScreenCover(isPresented: $baseData.showDetail, content:{DetailView(animation: animation).environmentObject(baseData)})
+//        .overlay(DetailView(animation: animation).environmentObject(baseData))
     }
     @ViewBuilder
     func CardView(recipe:Recipe)->some View{
@@ -179,6 +182,6 @@ struct Community: View {
 
 struct Home_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        BaseView()
     }
 }

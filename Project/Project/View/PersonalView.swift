@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct PersonalView: View {
+    
+    @Namespace var animation
+    @EnvironmentObject var baseData:BaseViewModel
     let user:User
     @ObservedObject var recipes:FavoriteRecipes
+
     var body: some View {
         ScrollView{
         VStack{
@@ -28,8 +32,16 @@ struct PersonalView: View {
                 ForEach(recipes.favoriterecipes, id: \.id) { recipe in
                     GeometryReader{
                         geometry in
+                        
                         CardView(recipe: recipe)
                             .rotation3DEffect(Angle(degrees: Double(geometry.frame(in: .global).minX ) / -80), axis: (x: 0, y: 1, z: 0))
+                            .onTapGesture {
+                                withAnimation{
+                                    baseData.currentRecipe = recipe
+                                    baseData.showDetail = true
+                                
+                                }
+                            }
                         
                     }.frame(minWidth: 300,  minHeight: 300)
                  
@@ -42,6 +54,8 @@ struct PersonalView: View {
         }
         }
         }
+        .fullScreenCover(isPresented: $baseData.showDetail, content:{DetailView(animation: animation).environmentObject(baseData)})
+//        .overlay(DetailView(animation: animation).environmentObject(baseData))
         }
     }
 
@@ -75,6 +89,7 @@ struct CardView:View{
         .frame(width: 300, height: 300)
         .background(Image(recipe.image)
             .resizable()
+            
            
            )
         
