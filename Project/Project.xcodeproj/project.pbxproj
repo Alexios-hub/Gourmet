@@ -23,6 +23,10 @@
 		A474A28F281E9FB60091A553 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A28D281E9FB60091A553 /* BaseViewModel.swift */; };
 		A474A291282001C20091A553 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A290282001C20091A553 /* Login.swift */; };
 		A474A29328200DD40091A553 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A29228200DD30091A553 /* UserInfo.swift */; };
+		CE218F982822C14100440EE1 /* IntroductionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218F972822C14100440EE1 /* IntroductionView.swift */; };
+		CE218F9A2822C1A200440EE1 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218F992822C1A200440EE1 /* Tag.swift */; };
+		CE218F9C2822C1BA00440EE1 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218F9B2822C1BA00440EE1 /* TagView.swift */; };
+		CE218F9E2822C27300440EE1 /* TaggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218F9D2822C27300440EE1 /* TaggerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +47,10 @@
 		A474A28D281E9FB60091A553 /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		A474A290282001C20091A553 /* Login.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A474A29228200DD30091A553 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		CE218F972822C14100440EE1 /* IntroductionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroductionView.swift; sourceTree = "<group>"; };
+		CE218F992822C1A200440EE1 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
+		CE218F9B2822C1BA00440EE1 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
+		CE218F9D2822C27300440EE1 /* TaggerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				A474A26F281E9F890091A553 /* Recipe.swift */,
+				CE218F992822C1A200440EE1 /* Tag.swift */,
 				A474A270281E9F890091A553 /* User.swift */,
 				A474A271281E9F890091A553 /* Product.swift */,
 			);
@@ -108,7 +117,10 @@
 			isa = PBXGroup;
 			children = (
 				A474A290282001C20091A553 /* Login.swift */,
+				CE218F9D2822C27300440EE1 /* TaggerView.swift */,
+				CE218F9B2822C1BA00440EE1 /* TagView.swift */,
 				A474A281281E9FA80091A553 /* DetailView.swift */,
+				CE218F972822C14100440EE1 /* IntroductionView.swift */,
 				A474A282281E9FA80091A553 /* PersonalView.swift */,
 				A474A283281E9FA80091A553 /* Community.swift */,
 				A474A284281E9FA80091A553 /* CustomCurveShape.swift */,
@@ -197,6 +209,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE218F9E2822C27300440EE1 /* TaggerView.swift in Sources */,
+				CE218F9C2822C1BA00440EE1 /* TagView.swift in Sources */,
+				CE218F9A2822C1A200440EE1 /* Tag.swift in Sources */,
 				A474A273281E9F890091A553 /* User.swift in Sources */,
 				A474A286281E9FA80091A553 /* DetailView.swift in Sources */,
 				A474A291282001C20091A553 /* Login.swift in Sources */,
@@ -207,6 +222,7 @@
 				A474A25D281E9DEC0091A553 /* ContentView.swift in Sources */,
 				A474A287281E9FA80091A553 /* PersonalView.swift in Sources */,
 				A474A28E281E9FB60091A553 /* RecipeViewModel.swift in Sources */,
+				CE218F982822C14100440EE1 /* IntroductionView.swift in Sources */,
 				A474A28A281E9FA80091A553 /* BaseView.swift in Sources */,
 				A474A25B281E9DEC0091A553 /* ProjectApp.swift in Sources */,
 				A474A29328200DD40091A553 /* UserInfo.swift in Sources */,
