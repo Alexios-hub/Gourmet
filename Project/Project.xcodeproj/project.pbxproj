@@ -37,6 +37,8 @@
 		CE218F9A2822C1A200440EE1 /* Tag.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218F992822C1A200440EE1 /* Tag.swift */; };
 		CE218F9C2822C1BA00440EE1 /* TagView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218F9B2822C1BA00440EE1 /* TagView.swift */; };
 		CE218F9E2822C27300440EE1 /* TaggerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE218F9D2822C27300440EE1 /* TaggerView.swift */; };
+		CEFDE1692824ED030080FDC7 /* FoodTagger.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEFDE1682824ED030080FDC7 /* FoodTagger.swift */; };
+		CEFDE16B2824F6C20080FDC7 /* Food.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = CEFDE16A2824F6C20080FDC7 /* Food.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +73,8 @@
 		CE218F992822C1A200440EE1 /* Tag.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tag.swift; sourceTree = "<group>"; };
 		CE218F9B2822C1BA00440EE1 /* TagView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagView.swift; sourceTree = "<group>"; };
 		CE218F9D2822C27300440EE1 /* TaggerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaggerView.swift; sourceTree = "<group>"; };
+		CEFDE1682824ED030080FDC7 /* FoodTagger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodTagger.swift; sourceTree = "<group>"; };
+		CEFDE16A2824F6C20080FDC7 /* Food.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Food.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		A474A259281E9DEC0091A553 /* Project */ = {
 			isa = PBXGroup;
 			children = (
+				CEFDE1682824ED030080FDC7 /* FoodTagger.swift */,
 				A474A28B281E9FB60091A553 /* ViewModel */,
 				A474A280281E9FA80091A553 /* View */,
 				A474A26E281E9F890091A553 /* Model */,
@@ -132,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				A474A261281E9DEE0091A553 /* Preview Assets.xcassets */,
+				CEFDE16A2824F6C20080FDC7 /* Food.mlmodel */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -249,6 +255,7 @@
 			files = (
 				CE218F9E2822C27300440EE1 /* TaggerView.swift in Sources */,
 				84B0A52A2824DEEC00754FAC /* ShareDataModel.swift in Sources */,
+				CEFDE16B2824F6C20080FDC7 /* Food.mlmodel in Sources */,
 				CE218F9C2822C1BA00440EE1 /* TagView.swift in Sources */,
 				CE218F9A2822C1A200440EE1 /* Tag.swift in Sources */,
 				A474A273281E9F890091A553 /* User.swift in Sources */,
@@ -272,6 +279,7 @@
 				A474A25B281E9DEC0091A553 /* ProjectApp.swift in Sources */,
 				84B0A51E2824DECE00754FAC /* MoreTasteView.swift in Sources */,
 				A474A29328200DD40091A553 /* UserInfo.swift in Sources */,
+				CEFDE1692824ED030080FDC7 /* FoodTagger.swift in Sources */,
 				84B0A5292824DEEC00754FAC /* SearchViewModel.swift in Sources */,
 				84B0A5232824DECE00754FAC /* Home.swift in Sources */,
 				A474A288281E9FA80091A553 /* Community.swift in Sources */,

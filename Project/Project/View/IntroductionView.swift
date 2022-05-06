@@ -44,10 +44,6 @@ struct WalkthroughScreen: View {
                 ScreenView(image: "food", title: "提示 3", detail: "机器学习 AR技术 新鲜食材跃然纸上", bgColor: Color("Color1"))
                     .transition(.scale)
             }
-//            if currentPage == 4 {
-//                ScreenView(image: "food", title: "Tip 4", detail: "AR技术 新鲜食材跃然纸上", bgColor: Color("Color1"))
-//                    .transition(.scale)
-//            }
             if currentPage == 4 {
                 ScreenView(image: "discuss", title: "提示 4", detail: "想要分享讨论？欢迎来社区逛逛", bgColor: Color("Color1"))
                     .transition(.scale)
