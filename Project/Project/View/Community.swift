@@ -43,7 +43,6 @@ struct Community: View {
                     }
                 }
                 .foregroundColor(.black)
-                .overlay(Image(systemName: "logo.playstation"))
                 HStack{
                     Text("社区")
                         .font(.title.bold())

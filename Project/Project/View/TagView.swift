@@ -116,6 +116,6 @@ struct TagView: View {
 
 struct TagView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        TaggerView()
     }
 }

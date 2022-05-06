@@ -53,9 +53,19 @@ struct PersonalView: View {
             .padding(.horizontal)
         }
         }
+        Button(action: goToHomeSecond, label: {
+            Text("退出登陆")
+            })
         }
         .fullScreenCover(isPresented: $baseData.showDetail, content:{DetailView(animation: animation).environmentObject(baseData)})
 //        .overlay(DetailView(animation: animation).environmentObject(baseData))
+        }
+    func goToHomeSecond(){
+            if let window = UIApplication.shared.windows.first
+            {
+                window.rootViewController = UIHostingController(rootView: LoginRegister())
+                window.makeKeyAndVisible()
+            }
         }
     }
 

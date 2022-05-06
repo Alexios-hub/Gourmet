@@ -41,7 +41,6 @@ struct DetailView: View {
                 }
                 }
                 .foregroundColor(.black)
-                .overlay(Image(systemName: "logo.playstation"))
                 .padding(.horizontal)
                     
                 Image(recipe.image)
