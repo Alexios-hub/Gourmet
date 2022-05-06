@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		84B0A51E2824DECE00754FAC /* MoreTasteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A5172824DECE00754FAC /* MoreTasteView.swift */; };
+		84B0A51F2824DECE00754FAC /* StaggeredGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A5182824DECE00754FAC /* StaggeredGrid.swift */; };
+		84B0A5202824DECE00754FAC /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A5192824DECE00754FAC /* RoundedCorner.swift */; };
+		84B0A5212824DECE00754FAC /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A51A2824DECE00754FAC /* SearchView.swift */; };
+		84B0A5222824DECE00754FAC /* SearchHome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A51B2824DECE00754FAC /* SearchHome.swift */; };
+		84B0A5232824DECE00754FAC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A51C2824DECE00754FAC /* Home.swift */; };
+		84B0A5242824DECE00754FAC /* TasteDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A51D2824DECE00754FAC /* TasteDetailView.swift */; };
+		84B0A5262824DEDA00754FAC /* TasteType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A5252824DEDA00754FAC /* TasteType.swift */; };
+		84B0A5292824DEEC00754FAC /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A5272824DEEC00754FAC /* SearchViewModel.swift */; };
+		84B0A52A2824DEEC00754FAC /* ShareDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B0A5282824DEEC00754FAC /* ShareDataModel.swift */; };
 		A474A25B281E9DEC0091A553 /* ProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A25A281E9DEC0091A553 /* ProjectApp.swift */; };
 		A474A25D281E9DEC0091A553 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A474A25C281E9DEC0091A553 /* ContentView.swift */; };
 		A474A25F281E9DEE0091A553 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A474A25E281E9DEE0091A553 /* Assets.xcassets */; };
@@ -30,6 +40,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		84B0A5172824DECE00754FAC /* MoreTasteView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreTasteView.swift; sourceTree = "<group>"; };
+		84B0A5182824DECE00754FAC /* StaggeredGrid.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StaggeredGrid.swift; sourceTree = "<group>"; };
+		84B0A5192824DECE00754FAC /* RoundedCorner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		84B0A51A2824DECE00754FAC /* SearchView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		84B0A51B2824DECE00754FAC /* SearchHome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchHome.swift; sourceTree = "<group>"; };
+		84B0A51C2824DECE00754FAC /* Home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		84B0A51D2824DECE00754FAC /* TasteDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasteDetailView.swift; sourceTree = "<group>"; };
+		84B0A5252824DEDA00754FAC /* TasteType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TasteType.swift; sourceTree = "<group>"; };
+		84B0A5272824DEEC00754FAC /* SearchViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
+		84B0A5282824DEEC00754FAC /* ShareDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShareDataModel.swift; sourceTree = "<group>"; };
 		A474A257281E9DEC0091A553 /* Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A474A25A281E9DEC0091A553 /* ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectApp.swift; sourceTree = "<group>"; };
 		A474A25C281E9DEC0091A553 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -64,6 +84,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		84B0A5162824DECE00754FAC /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				84B0A5172824DECE00754FAC /* MoreTasteView.swift */,
+				84B0A5182824DECE00754FAC /* StaggeredGrid.swift */,
+				84B0A5192824DECE00754FAC /* RoundedCorner.swift */,
+				84B0A51A2824DECE00754FAC /* SearchView.swift */,
+				84B0A51B2824DECE00754FAC /* SearchHome.swift */,
+				84B0A51C2824DECE00754FAC /* Home.swift */,
+				84B0A51D2824DECE00754FAC /* TasteDetailView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
 		A474A24E281E9DEC0091A553 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				A474A26F281E9F890091A553 /* Recipe.swift */,
+				84B0A5252824DEDA00754FAC /* TasteType.swift */,
 				CE218F992822C1A200440EE1 /* Tag.swift */,
 				A474A270281E9F890091A553 /* User.swift */,
 				A474A271281E9F890091A553 /* Product.swift */,
@@ -116,6 +151,7 @@
 		A474A280281E9FA80091A553 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				84B0A5162824DECE00754FAC /* SearchView */,
 				A474A290282001C20091A553 /* Login.swift */,
 				CE218F9D2822C27300440EE1 /* TaggerView.swift */,
 				CE218F9B2822C1BA00440EE1 /* TagView.swift */,
@@ -133,6 +169,8 @@
 			isa = PBXGroup;
 			children = (
 				A474A28C281E9FB60091A553 /* RecipeViewModel.swift */,
+				84B0A5272824DEEC00754FAC /* SearchViewModel.swift */,
+				84B0A5282824DEEC00754FAC /* ShareDataModel.swift */,
 				A474A28D281E9FB60091A553 /* BaseViewModel.swift */,
 				A474A29228200DD30091A553 /* UserInfo.swift */,
 			);
@@ -210,14 +248,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE218F9E2822C27300440EE1 /* TaggerView.swift in Sources */,
+				84B0A52A2824DEEC00754FAC /* ShareDataModel.swift in Sources */,
 				CE218F9C2822C1BA00440EE1 /* TagView.swift in Sources */,
 				CE218F9A2822C1A200440EE1 /* Tag.swift in Sources */,
 				A474A273281E9F890091A553 /* User.swift in Sources */,
 				A474A286281E9FA80091A553 /* DetailView.swift in Sources */,
 				A474A291282001C20091A553 /* Login.swift in Sources */,
+				84B0A5202824DECE00754FAC /* RoundedCorner.swift in Sources */,
+				84B0A51F2824DECE00754FAC /* StaggeredGrid.swift in Sources */,
 				A474A272281E9F890091A553 /* Recipe.swift in Sources */,
+				84B0A5222824DECE00754FAC /* SearchHome.swift in Sources */,
 				A474A274281E9F890091A553 /* Product.swift in Sources */,
+				84B0A5262824DEDA00754FAC /* TasteType.swift in Sources */,
+				84B0A5212824DECE00754FAC /* SearchView.swift in Sources */,
 				A474A289281E9FA80091A553 /* CustomCurveShape.swift in Sources */,
+				84B0A5242824DECE00754FAC /* TasteDetailView.swift in Sources */,
 				A474A28F281E9FB60091A553 /* BaseViewModel.swift in Sources */,
 				A474A25D281E9DEC0091A553 /* ContentView.swift in Sources */,
 				A474A287281E9FA80091A553 /* PersonalView.swift in Sources */,
@@ -225,7 +270,10 @@
 				CE218F982822C14100440EE1 /* IntroductionView.swift in Sources */,
 				A474A28A281E9FA80091A553 /* BaseView.swift in Sources */,
 				A474A25B281E9DEC0091A553 /* ProjectApp.swift in Sources */,
+				84B0A51E2824DECE00754FAC /* MoreTasteView.swift in Sources */,
 				A474A29328200DD40091A553 /* UserInfo.swift in Sources */,
+				84B0A5292824DEEC00754FAC /* SearchViewModel.swift in Sources */,
+				84B0A5232824DECE00754FAC /* Home.swift in Sources */,
 				A474A288281E9FA80091A553 /* Community.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

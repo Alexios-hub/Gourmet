@@ -15,7 +15,7 @@ struct BaseView: View {
     }
     var body: some View {
         TabView(selection: $baseData.currentTab){
-          Text("Home")
+          Home()
                 .tag(Tab.Home)
             
             Text("heart").tag(Tab.Heart)

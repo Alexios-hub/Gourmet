@@ -26,13 +26,6 @@ struct IntroductionView_Previews: PreviewProvider {
     }
 }
 
-struct Home: View {
-    var body: some View {
-        Text("Welcome To Home !!!")
-            .font(.title)
-            .fontWeight(.heavy)
-    }
-}
 
 struct WalkthroughScreen: View {
     @AppStorage("currentPage") var currentPage = 1
