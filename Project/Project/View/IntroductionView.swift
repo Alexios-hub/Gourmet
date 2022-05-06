@@ -8,13 +8,14 @@
 import SwiftUI
 
 struct IntroductionView: View {
-    @AppStorage("currentPage") var currentPage = 1
+//    @AppStorage("currentPage") var currentPage = 1
+    @State var currentPage = 1
     var body: some View {
         if currentPage > totalPages {
-            LoginRegister()
+            TaggerView()
         }
         else {
-            WalkthroughScreen()
+            WalkthroughScreen(currentPage: $currentPage)
         }
     }
 }
@@ -26,26 +27,34 @@ struct IntroductionView_Previews: PreviewProvider {
     }
 }
 
+struct Home: View {
+    var body: some View {
+        Text("Welcome To Home !!!")
+            .font(.title)
+            .fontWeight(.heavy)
+    }
+}
 
 struct WalkthroughScreen: View {
-    @AppStorage("currentPage") var currentPage = 1
+//    @AppStorage("currentPage") var currentPage = 1
+    @Binding var currentPage: Int
     var body: some View {
         
         ZStack {
             if currentPage == 1 {
-                ScreenView(image: "searching", title: "提示 1", detail: "利用搜索功能，根据已有的食材寻找菜谱吧！", bgColor: Color("Color1"))
+                ScreenView(image: "searching", title: "提示 1", detail: "利用搜索功能，根据已有的食材寻找菜谱吧！", bgColor: Color("Color1"), currentPage: $currentPage)
                     .transition(.scale)
             }
             if currentPage == 2 {
-                ScreenView(image: "recipe", title: "提示 2", detail: "菜谱不够完善？快来上传吧！", bgColor: Color("Color1"))
+                ScreenView(image: "recipe", title: "提示 2", detail: "菜谱不够完善？快来上传吧！", bgColor: Color("Color1"), currentPage: $currentPage)
                     .transition(.scale)
             }
             if currentPage == 3 {
-                ScreenView(image: "food", title: "提示 3", detail: "机器学习 AR技术 新鲜食材跃然纸上", bgColor: Color("Color1"))
+                ScreenView(image: "food", title: "提示 3", detail: "机器学习 AR技术 新鲜食材跃然纸上", bgColor: Color("Color1"), currentPage: $currentPage)
                     .transition(.scale)
             }
             if currentPage == 4 {
-                ScreenView(image: "discuss", title: "提示 4", detail: "想要分享讨论？欢迎来社区逛逛", bgColor: Color("Color1"))
+                ScreenView(image: "discuss", title: "提示 4", detail: "想要分享讨论？欢迎来社区逛逛", bgColor: Color("Color1"), currentPage: $currentPage)
                     .transition(.scale)
             }
         }
@@ -93,7 +102,8 @@ struct ScreenView: View {
     var detail: String
     var bgColor: Color
     
-    @AppStorage("currentPage") var currentPage = 1
+//    @AppStorage("currentPage") var currentPage = 1
+    @Binding var currentPage: Int
     
     var body: some View {
         VStack(spacing: 20) {
