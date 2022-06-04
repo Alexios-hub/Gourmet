@@ -18,7 +18,7 @@ struct BaseView: View {
           Home()
                 .tag(Tab.Home)
             
-            Text("heart").tag(Tab.Heart)
+            Heart(user: loginuser, recipes: favoriterecipes).environmentObject(baseData).tag(Tab.Heart)
             
             Community()
                 .environmentObject(baseData)

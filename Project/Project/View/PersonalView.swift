@@ -84,33 +84,7 @@ struct CircleImage: View {
         }
     }
 }
-struct CardView:View{
-    let recipe:Recipe
-    var body: some View{
 
-        VStack{
-            Text(recipe.name).fontWeight(.bold)
-                .foregroundColor(.white)
-                .font(.system(size: 30))
-            Text(recipe.location).fontWeight(.bold)
-                .foregroundColor(.white)
-                .font(.system(size: 20))
-        }
-        .frame(width: 300, height: 300)
-        .background(Image(recipe.image)
-            .resizable()
-            
-           
-           )
-        
-        
-       
-       
-        .cornerRadius(20)
-    
-    
-    }
-}
 
 
 struct PersonView_preview:PreviewProvider{
