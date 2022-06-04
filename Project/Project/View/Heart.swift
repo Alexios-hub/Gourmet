@@ -24,7 +24,6 @@ struct Heart: View {
                 .fontWeight(.bold)
                 .frame(alignment: .leading)
             Divider()
-                Spacer(minLength: 30)
  
         ScrollView(){
             LazyVGrid(columns: gridItemLayout, spacing: 20){
